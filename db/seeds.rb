@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Email.create(object: "Proposition d'emploi", body: "Bonjour, je suis un corps de mail");
+Email.create(object: "Argent facile", body: "Bonjour, je suis un corps de mail");
+Email.create(object: "Passer à JavaScript", body: "Bonjour, je suis un corps de mail");
+Email.create(object: "Promo wish -50%", body: "Bonjour, je suis un corps de mail");
