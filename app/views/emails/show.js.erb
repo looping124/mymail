@@ -1,0 +1,6 @@
+if (!document.getElementById("remove-me")) {
+document.getElementById("email-show").insertAdjacentHTML("beforeend", "<%= j render 'email_full', email: @email %>");
+} else {
+  document.getElementById("remove-me").remove();
+  document.getElementById("email-show").insertAdjacentHTML("beforeend", "<%= j render 'email_full', email: @email %>");
+}
