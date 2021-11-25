@@ -4,3 +4,5 @@ document.getElementById("email-show").insertAdjacentHTML("beforeend", "<%= j ren
   document.getElementById("remove-me").remove();
   document.getElementById("email-show").insertAdjacentHTML("beforeend", "<%= j render 'email_full', email: @email %>");
 }
+//On retire la class gras
+document.querySelector("[href='/emails/<%=@email.id%>']").classList.remove("bold");

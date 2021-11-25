@@ -1,5 +1,10 @@
 <div class="card">
     <div class="card-header">
+    
+    <% if email.read == true %>
         <%= link_to "#{email.object}", email_path(email.id) , remote: true%>
+        <% else %> 
+          <%= link_to "#{email.object}", email_path(email.id) , remote: true, class:"bold"%>
+    <% end %>
     </div>
 </div>
