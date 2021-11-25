@@ -1,4 +1,5 @@
 <div id="remove-me">
   <h3><%=@email.object%></h3>
   <p><%=@email.body%></p>
+  <%= link_to "Supprimer cet email", email_path(@email.id), :method => :delete,class:"btn btn-danger mt-3" , remote: true%>
 </div>

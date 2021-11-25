@@ -1,2 +1,3 @@
 <h2><%=@email.object%></h2>
 <p><%=@email.body%></p>
+<%= link_to "Supprimer cet email", email_path(@email.id), :method => :delete, data: {confirm: "Are you sure?"},class:"btn btn-danger mt-3" %>
